@@ -31,7 +31,6 @@ export const AgregarCliente = () => {
         const cliente = { id, nombre, apellido, email };
 
         if (id) {
-            // Si hay un ID, estamos editando un cliente existente
             ClienteService.updateCliente(id, cliente)
                 .then(() => {
                     console.log('Cliente actualizado con éxito');
@@ -41,7 +40,6 @@ export const AgregarCliente = () => {
                     console.error('Error al actualizar el cliente', err);
                 });
         } else {
-            // Si no hay un ID, estamos creando un nuevo cliente
             ClienteService.createCliente(cliente)
                 .then(() => {
                     console.log('Cliente creado con éxito');
