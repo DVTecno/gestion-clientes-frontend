@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="py-5 div footer position-fixed ">
+    <footer className="py-5 div footer">
          <hr className='container' />
       <div className="container">
         <div className="row">
